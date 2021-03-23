@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="9W1-0G-yKE">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9W1-0G-yKE">
                                 <rect key="frame" x="143" y="104" width="128" height="477"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8f9-ij-Ck7">
@@ -36,13 +36,26 @@
                                     <constraint firstAttribute="width" constant="128" id="eTb-bH-Nvq"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzZ-YI-qnu">
+                                <rect key="frame" x="137" y="774" width="140" height="51"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="TOO-GQ-L5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9W1-0G-yKE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="4HI-VW-bQh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9W1-0G-yKE" secondAttribute="bottom" constant="281" id="DOM-bk-lH4"/>
+                            <constraint firstItem="jzZ-YI-qnu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R2p-ci-vw0"/>
+                            <constraint firstItem="9W1-0G-yKE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="hpf-eo-9tF"/>
                             <constraint firstItem="9W1-0G-yKE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pFT-G1-ovB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jzZ-YI-qnu" secondAttribute="bottom" constant="37" id="uMF-2h-O0J"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -54,6 +67,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
