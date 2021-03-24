@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW2_1_Ex2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9W1-0G-yKE">
-                                <rect key="frame" x="129.66666666666666" y="103.99999999999997" width="116" height="432.33333333333326"/>
+                                <rect key="frame" x="148" y="104" width="132" height="493"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8f9-ij-Ck7">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="114"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="134.33333333333334"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjc-bK-vh0">
-                                        <rect key="frame" x="0.0" y="159" width="116" height="114.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="179.33333333333331" width="132" height="134.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sg1-zl-HTe">
-                                        <rect key="frame" x="0.0" y="318.33333333333331" width="116" height="114"/>
+                                        <rect key="frame" x="0.0" y="358.66666666666669" width="132" height="134.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
@@ -37,7 +37,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzZ-YI-qnu">
-                                <rect key="frame" x="117.66666666666669" y="660" width="140" height="51"/>
+                                <rect key="frame" x="144" y="774" width="140" height="51"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jzZ-YI-qnu" secondAttribute="height" multiplier="140:51" id="KdN-k9-kvL"/>

@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet var yellowLightView: UIView!
     @IBOutlet var greenLightView: UIView!
     
-    
     @IBOutlet var startButtonView: UIButton!
     
     override func viewDidLoad() {
@@ -37,7 +36,7 @@ class ViewController: UIViewController {
         case greenLight
     }
     
-    var currentLight = LightColours.redLight
+    private var currentLight = LightColours.redLight
     
     @IBAction func startButtonPressed() {
         startButtonView.setTitle("Next", for: .normal)
