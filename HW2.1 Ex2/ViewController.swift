@@ -8,39 +8,57 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var redLightView: UIView!
     @IBOutlet var yellowLightView: UIView!
     @IBOutlet var greenLightView: UIView!
     
-   
-    @IBOutlet var startButton: UIButton!
+    
+    @IBOutlet var startButtonView: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        redLightView.alpha = 0.3
-        yellowLightView.alpha = 0.3
-        greenLightView.alpha = 0.3
         
+        redLightView.alpha = 0.3
         redLightView.layer.cornerRadius = 55
+        
+        yellowLightView.alpha = 0.3
         yellowLightView.layer.cornerRadius = 55
+        
+        greenLightView.alpha = 0.3
         greenLightView.layer.cornerRadius = 55
         
-        startButton.layer.cornerRadius = 10
-        
-        
+        startButtonView.layer.cornerRadius = 10
     }
-
+    
+    enum LightColours {
+        case redLight
+        case yellowLight
+        case greenLight
+    }
+    
+    var currentLight = LightColours.redLight
+    
     @IBAction func startButtonPressed() {
-        startButton.setTitle("Next", for: .normal)
-
-    
-    
+        startButtonView.setTitle("Next", for: .normal)
         
+        func changeColourLight(for lights: LightColours) {
+            switch currentLight {
+            case .redLight:
+                greenLightView.alpha = 0.3
+                redLightView.alpha = 1
+                currentLight = .yellowLight
+            case .yellowLight:
+                redLightView.alpha = 0.3
+                yellowLightView.alpha = 1
+                currentLight = .greenLight
+            case .greenLight:
+                yellowLightView.alpha = 0.3
+                greenLightView.alpha = 1
+                currentLight = .redLight
+            }
+        }
+        changeColourLight(for: currentLight)
     }
-    
-    
-    
 }
 

@@ -64,7 +64,7 @@
                     <connections>
                         <outlet property="greenLightView" destination="Sg1-zl-HTe" id="W6Z-Jw-F0j"/>
                         <outlet property="redLightView" destination="8f9-ij-Ck7" id="tgP-TP-NsL"/>
-                        <outlet property="startButton" destination="jzZ-YI-qnu" id="0GL-RX-F2C"/>
+                        <outlet property="startButtonView" destination="jzZ-YI-qnu" id="S78-fx-VpA"/>
                         <outlet property="yellowLightView" destination="Hjc-bK-vh0" id="nlu-q9-qG0"/>
                     </connections>
                 </viewController>
